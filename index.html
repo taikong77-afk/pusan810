@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cellia Vital50+ | Premium Daily Wellness Solutions for Women</title>
+  <meta name="description" content="Cellia Vital50+ provides premium dietary supplements carefully formulated for women in their 50s. Embrace your daily vitality, balanced nutrition, and healthy routine with pure ingredients.">
+
+  <!-- Google Fonts: Inter, Playfair Display, Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & CSS VARIABLES
+       ========================================================================== */
+    :root {
+      /* Brand Color Palette */
+      --color-sage-dark: #2C4A3E;        /* Deep Eco Sage - Primary */
+      --color-sage: #4A7C59;             /* Eco Green Accent */
+      --color-sage-soft: #EBF3EE;        /* Light Mint Tint */
+      --color-sage-glow: #C9E2D2;
+      
+      --color-cream-bg: #FAF8F5;         /* Warm Ivory Base */
+      --color-cream-card: #FFFFFF;       /* Crisp White Card */
+      --color-cream-alt: #F3EDE2;        /* Soft Warm Cream Section */
+      
+      --color-rose-gold: #C88A75;        /* Muted Rose Gold Accent */
+      --color-rose-dark: #8A5343;        /* Deep Terracotta Text */
+      --color-rose-light: #F8EFEA;       /* Gentle Rose Tint */
+
+      --color-gold: #D4AF37;
+      
+      --color-text-main: #1C2826;        /* High Contrast Dark Charcoal */
+      --color-text-muted: #55665E;       /* Readable Sub-body Text */
+      --color-text-light: #7E9087;
+      
+      --color-border: #E2ECE5;
+      --color-border-dark: #C8D6CD;
+
+      /* Typography */
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', 'Noto Sans KR', sans-serif;
+
+      /* Shadows & Elevation */
+      --shadow-sm: 0 4px 12px rgba(44, 74, 62, 0.05);
+      --shadow-md: 0 10px 28px rgba(44, 74, 62, 0.08);
+      --shadow-lg: 0 20px 45px rgba(44, 74, 62, 0.12);
+      --shadow-rose: 0 10px 25px rgba(200, 138, 117, 0.25);
+
+      /* Border Radius */
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 32px;
+      --radius-full: 9999px;
+
+      /* Transitions */
+      --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* ==========================================================================
+       BASE & RESET
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 18px; /* High legibility base font for 50+ target audience */
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-cream-bg);
+      color: var(--color-text-main);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: var(--transition);
+    }
+
+    img, svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Section Spacing */
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    @media (max-width: 768px) {
+      html { font-size: 16px; }
+      .section-padding { padding: 60px 0; }
+    }
+
+    /* Section Typography */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background-color: var(--color-sage-soft);
+      color: var(--color-sage-dark);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      border: 1px solid var(--color-border);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: var(--color-sage-dark);
+      line-height: 1.3;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .section-desc {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 720px;
+      margin: 0 auto 50px auto;
+    }
+
+    .text-center { text-align: center; }
+
+    /* Button System */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 36px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: var(--color-rose-gold);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-rose);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-rose-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(138, 83, 67, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--color-sage);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--color-sage-dark);
+      color: var(--color-sage-dark);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: rgba(250, 248, 245, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(226, 236, 229, 0.8);
+      transition: var(--transition);
+    }
+
+    .site-header.scrolled {
+      box-shadow: var(--shadow-sm);
+      background-color: rgba(250, 248, 245, 0.96);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 84px;
+    }
+
+    /* Brand Logo */
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-symbol {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--color-sage-dark), var(--color-sage));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-name {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-tagline {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-rose-gold);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    /* Nav Links */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text-main);
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-rose-gold);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-sage-dark);
+      font-weight: 600;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      padding: 8px;
+    }
+
+    .mobile-toggle span {
+      width: 26px;
+      height: 2px;
+      background-color: var(--color-sage-dark);
+      transition: var(--transition);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding-top: 150px;
+      padding-bottom: 90px;
+      background: linear-gradient(180deg, var(--color-cream-bg) 0%, var(--color-cream-alt) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg-glow {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(200, 138, 117, 0.15) 0%, rgba(74, 124, 89, 0.05) 50%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #FFFFFF;
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+      font-size: 0.9rem;
+      color: var(--color-sage-dark);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero-badge-icon {
+      color: var(--color-rose-gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 3.2rem;
+      line-height: 1.25;
+      color: var(--color-sage-dark);
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .hero-trust-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 30px;
+      border-top: 1px solid var(--color-border-dark);
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .trust-number {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+    }
+
+    .trust-label {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* Hero Showcase Graphic */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card-showcase {
+      position: relative;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .floating-pill {
+      position: absolute;
+      background: #FFFFFF;
+      padding: 12px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      border: 1px solid var(--color-border);
+      animation: floatPill 4s ease-in-out infinite;
+    }
+
+    .pill-1 {
+      top: -20px;
+      left: -20px;
+    }
+
+    .pill-2 {
+      bottom: 20px;
+      right: -20px;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* ==========================================================================
+       PHILOSOPHY & BRAND STORY
+       ========================================================================== */
+    .story-section {
+      background-color: #FFFFFF;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .story-visual-box {
+      background-color: var(--color-sage-soft);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      position: relative;
+      border: 1px solid var(--color-border);
+    }
+
+    .story-quote-card {
+      background: #FFFFFF;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--color-rose-gold);
+    }
+
+    .story-quote-text {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--color-sage-dark);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .story-quote-author {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-rose-gold);
+      letter-spacing: 0.05em;
+    }
+
+    /* ==========================================================================
+       CORE PILLARS (KEY LIFESTYLE CARE)
+       ========================================================================== */
+    .pillars-section {
+      background-color: var(--color-cream-bg);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: var(--color-cream-card);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-sage-soft);
+    }
+
+    .pillar-icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-sage-soft);
+      color: var(--color-sage-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+
+    .pillar-card:hover .pillar-icon-box {
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+    }
+
+    .pillar-num {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-rose-gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pillar-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .pillar-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       PRODUCT SHOWCASE & FILTERING
+       ========================================================================== */
+    .products-section {
+      background-color: #FFFFFF;
+    }
+
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 12px 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background-color: var(--color-cream-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+    }
+
+    .tab-btn:hover {
+      color: var(--color-sage-dark);
+      border-color: var(--color-sage);
+    }
+
+    .tab-btn.active {
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+      border-color: var(--color-sage-dark);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .product-card {
+      background: var(--color-cream-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-border-dark);
+    }
+
+    .product-img-box {
+      background: linear-gradient(135deg, var(--color-sage-soft) 0%, var(--color-cream-alt) 100%);
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      min-height: 240px;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background-color: var(--color-rose-gold);
+      color: #FFFFFF;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.05em;
+    }
+
+    .product-content {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .tag-pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      background-color: var(--color-sage-soft);
+      padding: 3px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .product-name {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .product-tip {
+      font-size: 0.85rem;
+      background-color: #FFFFFF;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--color-rose-gold);
+      color: var(--color-text-main);
+      margin-bottom: 20px;
+    }
+
+    .product-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .product-specs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .spec-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-light);
+    }
+
+    .spec-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+    }
+
+    /* Detail Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(28, 40, 38, 0.65);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+      padding: 24px;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: #FFFFFF;
+      width: 100%;
+      max-width: 720px;
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      transform: translateY(20px);
+      transition: var(--transition);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.open .modal-card {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--color-cream-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--color-sage-dark);
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+    }
+
+    .modal-header-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-rose-gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .modal-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 16px;
+    }
+
+    .modal-section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+      margin: 20px 0 10px 0;
+    }
+
+    .modal-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .modal-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+    }
+
+    .modal-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--color-sage);
+      font-weight: bold;
+    }
+
+    /* ==========================================================================
+       INTERACTIVE SELF-QUIZ (NUTRITION ROUTINE QUIZ)
+       ========================================================================== */
+    .quiz-section {
+      background-color: var(--color-cream-alt);
+      position: relative;
+    }
+
+    .quiz-container-box {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-border);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .quiz-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .quiz-bar-bg {
+      flex-grow: 1;
+      height: 8px;
+      background-color: var(--color-sage-soft);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .quiz-bar-fill {
+      height: 100%;
+      width: 25%;
+      background: linear-gradient(90deg, var(--color-sage-dark), var(--color-rose-gold));
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+    }
+
+    .quiz-step-count {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+    }
+
+    .quiz-question-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 24px;
+    }
+
+    .quiz-options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .quiz-option-card {
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--color-cream-bg);
+    }
+
+    .quiz-option-card:hover {
+      border-color: var(--color-sage);
+      background-color: #FFFFFF;
+    }
+
+    .quiz-option-card.selected {
+      border-color: var(--color-rose-gold);
+      background-color: var(--color-rose-light);
+    }
+
+    .quiz-radio {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .quiz-option-card.selected .quiz-radio {
+      border-color: var(--color-rose-gold);
+      background-color: var(--color-rose-gold);
+    }
+
+    .quiz-radio::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      display: none;
+    }
+
+    .quiz-option-card.selected .quiz-radio::after {
+      display: block;
+    }
+
+    .quiz-option-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+    }
+
+    .quiz-nav-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Quiz Result View */
+    .quiz-result-box {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-icon-badge {
+      width: 72px;
+      height: 72px;
+      background-color: var(--color-sage-soft);
+      color: var(--color-sage-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px auto;
+    }
+
+    .result-title {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 12px;
+    }
+
+    .result-routine-card {
+      background: var(--color-cream-bg);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      border: 1px solid var(--color-border);
+      margin: 24px 0 32px 0;
+      text-align: left;
+    }
+
+    /* ==========================================================================
+       KEY INGREDIENTS SPOTLIGHT
+       ========================================================================== */
+    .ingredients-section {
+      background-color: #FFFFFF;
+    }
+
+    .ingredients-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .ingredient-card {
+      background: var(--color-cream-bg);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      border: 1px solid var(--color-border);
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .ingredient-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ingredient-img-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .ingredient-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      color: var(--color-sage-dark);
+      margin-bottom: 8px;
+    }
+
+    .ingredient-origin {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-rose-gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .ingredient-desc {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       CUSTOMER REVIEWS
+       ========================================================================== */
+    .reviews-section {
+      background-color: var(--color-cream-bg);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .review-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 32px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stars-row {
+      color: var(--color-gold);
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+    }
+
+    .review-quote {
+      font-size: 0.98rem;
+      color: var(--color-text-main);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .reviewer-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--color-sage-soft);
+      color: var(--color-sage-dark);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .reviewer-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reviewer-name {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--color-sage-dark);
+    }
+
+    .reviewer-tag {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+
+    /* ==========================================================================
+       FAQ ACCORDION SECTION
+       ========================================================================== */
+    .faq-section {
+      background-color: #FFFFFF;
+    }
+
+    .faq-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 16px;
+      background-color: var(--color-cream-bg);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      border-color: var(--color-sage-dark);
+      background-color: #FFFFFF;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-button {
+      width: 100%;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      background: none;
+      border: none;
+    }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--color-sage-soft);
+      color: var(--color-sage-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+      background-color: var(--color-sage-dark);
+      color: #FFFFFF;
+    }
+
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out;
+      padding: 0 28px;
+    }
+
+    .faq-item.open .faq-content {
+      padding-bottom: 24px;
+    }
+
+    .faq-text {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       FOOTER & DISCLAIMER
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--color-sage-dark);
+      color: #E2ECE5;
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand-desc {
+      font-size: 0.9rem;
+      color: #B5C9BC;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .footer-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #B5C9BC;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: #FFFFFF;
+      padding-left: 4px;
+    }
+
+    .footer-disclaimer-box {
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .disclaimer-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-rose-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+
+    .disclaimer-text {
+      font-size: 0.82rem;
+      color: #B5C9BC;
+      line-height: 1.65;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.85rem;
+      color: #8DA998;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+      .hero-cta-group { justify-content: center; }
+      .hero-trust-bar { justify-content: center; }
+      .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+      .products-grid { grid-template-columns: repeat(2, 1fr); }
+      .ingredients-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(1, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .story-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        box-shadow: var(--shadow-md);
+        transform: translateY(-150%);
+        transition: var(--transition);
+      }
+      .nav-menu.open { transform: translateY(0); }
+      .mobile-toggle { display: flex; }
+      .hero-title { font-size: 2.3rem; }
+      .section-title { font-size: 1.9rem; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr; }
+      .ingredients-grid { grid-template-columns: 1fr; }
+      .quiz-options-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 14px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-logo" aria-label="Cellia Vital50+ Home">
+        <div class="logo-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+            <path d="M12 6V18M6 12H18" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Cellia</span>
+          <span class="logo-tagline">VITAL 50+</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#story" class="nav-link">About Us</a></li>
+          <li><a href="#pillars" class="nav-link">Nutrition Guide</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#ingredients" class="nav-link">Key Ingredients</a></li>
+          <li><a href="#reviews" class="nav-link">Customer Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#quiz" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">Find My Routine</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-icon">✦</span>
+            <span>Tailored Daily Nutrition for Women 50+</span>
+          </div>
+          <h1 class="hero-title">Embrace Your 50s:<br>Building Daily Healthy Habits</h1>
+          <p class="hero-subtitle">
+            Complete your vibrant daily life with balanced nutrition — tailored wellness solutions made with carefully selected raw ingredients.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#quiz" class="btn btn-primary">Discover My Routine</a>
+            <a href="#products" class="btn btn-outline">Explore Lineup</a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span class="trust-number">100%</span>
+              <span class="trust-label">Plant-Derived Capsules</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">Strict</span>
+              <span class="trust-label">Quality Standards</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">Zero</span>
+              <span class="trust-label">Artificial Additives</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-showcase">
+            <!-- Vector Illustration of Premium Glass Supplement Jar -->
+            <svg viewBox="0 0 340 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 320px; margin: 0 auto;">
+              <!-- Background Ambient Glow -->
+              <circle cx="170" cy="190" r="140" fill="url(#hero_glow)" opacity="0.6"/>
+              <!-- Jar Shadow -->
+              <ellipse cx="170" cy="330" rx="90" ry="16" fill="#1C2826" opacity="0.12"/>
+              <!-- Jar Body -->
+              <rect x="95" y="120" width="150" height="190" rx="24" fill="url(#jar_glass)" stroke="#4A7C59" stroke-width="2"/>
+              <rect x="103" y="128" width="134" height="174" rx="18" fill="url(#amber_glow)" opacity="0.85"/>
+              <!-- Label -->
+              <rect x="105" y="160" width="130" height="110" rx="8" fill="#FAF8F5" stroke="#C88A75" stroke-width="1.5"/>
+              <!-- Label Gold Accent Top -->
+              <rect x="105" y="160" width="130" height="6" fill="#C88A75"/>
+              <!-- Label Text -->
+              <text x="170" y="195" font-family="'Playfair Display', serif" font-weight="bold" font-size="18" fill="#2C4A3E" text-anchor="middle">CELLIA</text>
+              <text x="170" y="215" font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#C88A75" text-anchor="middle" letter-spacing="2">VITALITY 50+</text>
+              <text x="170" y="235" font-family="'Inter', sans-serif" font-size="9" fill="#55665E" text-anchor="middle">Daily Botanical Care</text>
+              <text x="170" y="252" font-family="'Inter', sans-serif" font-size="8" fill="#7E9087" text-anchor="middle">60 Vegetable Capsules</text>
+              <!-- Lid -->
+              <rect x="110" y="75" width="120" height="45" rx="10" fill="url(#lid_gold)"/>
+              <rect x="105" y="115" width="130" height="10" rx="3" fill="#8A5343"/>
+              <!-- Floating Botanical Leaf Elements -->
+              <path d="M60 140C60 140 80 120 100 135C100 135 85 160 60 140Z" fill="#4A7C59" opacity="0.7"/>
+              <path d="M280 240C280 240 260 260 240 245C240 245 255 220 280 240Z" fill="#C88A75" opacity="0.7"/>
+
+              <defs>
+                <radialGradient id="hero_glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 190) rotate(90) scale(140)">
+                  <stop stop-color="#EBF3EE"/>
+                  <stop offset="1" stop-color="#FAF8F5" stop-opacity="0"/>
+                </radialGradient>
+                <linearGradient id="jar_glass" x1="95" y1="120" x2="245" y2="310" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF"/>
+                  <stop offset="1" stop-color="#EBF3EE"/>
+                </linearGradient>
+                <linearGradient id="amber_glow" x1="103" y1="128" x2="237" y2="302" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#2C4A3E"/>
+                  <stop offset="1" stop-color="#1C2826"/>
+                </linearGradient>
+                <linearGradient id="lid_gold" x1="110" y1="75" x2="230" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C88A75"/>
+                  <stop offset="1" stop-color="#8A5343"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <!-- Floating Pill Badges -->
+            <div class="floating-pill pill-1">
+              <span style="color: var(--color-rose-gold); font-size: 1.2rem;">♥</span>
+              <span>Pomegranate Extract & CoQ10</span>
+            </div>
+            <div class="floating-pill pill-2">
+              <span style="color: var(--color-sage); font-size: 1.2rem;">✦</span>
+              <span>Gentle Digestive Comfort</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHILOSOPHY & BRAND STORY
+         ========================================================================== -->
+    <section class="story-section section-padding" id="story">
+      <div class="container story-grid">
+        <div class="story-visual-box">
+          <div class="story-quote-card">
+            <p class="story-quote-text">
+              "Entering your 50s is not about slowing down; it is a golden era of refined self-care, daily clarity, and elegant vitality."
+            </p>
+            <span class="story-quote-author">— Cellia Wellness Formulation Team</span>
+          </div>
+        </div>
+
+        <div class="story-text-box">
+          <div class="section-tag">Brand Philosophy</div>
+          <h2 class="section-title">Designed for Your Golden Rhythm</h2>
+          <p class="section-desc" style="margin-bottom: 24px; text-align: left;">
+            Cellia was created with a quiet dedication to women in their 50s. As our body's natural rhythms mature, daily dietary needs shift toward gentle, highly absorbable, and clean nourishment.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 30px;">
+            We select only premium raw ingredients sourced from trusted global origins — free from synthetic fillers or heavy artificial processing. Every capsule is designed to integrate seamlessly into your morning tea or evening routine.
+          </p>
+          <div style="display: flex; gap: 20px;">
+            <div>
+              <strong style="color: var(--color-sage-dark); font-size: 1.1rem; display: block;">Pure Raw Origins</strong>
+              <span style="font-size: 0.88rem; color: var(--color-text-muted);">Traceable, high-grade botanical extracts</span>
+            </div>
+            <div>
+              <strong style="color: var(--color-sage-dark); font-size: 1.1rem; display: block;">Gentle Absorption</strong>
+              <span style="font-size: 0.88rem; color: var(--color-text-muted);">Crafted for sensitive stomach comfort</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CORE PILLARS (KEY LIFESTYLE CARE)
+         ========================================================================== -->
+    <section class="pillars-section section-padding" id="pillars">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">4 Core Nutrition Pillars</div>
+          <h2 class="section-title">Key Lifestyle Care for Your 50s</h2>
+          <p class="section-desc">
+            Discover four foundational pillars tailored to complement your daily energy, digestion, and total lifestyle balance.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <span class="pillar-num">Pillar 01</span>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Vitality Routine for Daily Energy</h3>
+            <p class="pillar-desc">
+              Active morning support formulated with Vitamin B-Complex, CoQ10, and plant antioxidants to keep your daily stamina steady and clear.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <span class="pillar-num">Pillar 02</span>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6V12L16 14"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Essential Nutrition for Body Balance</h3>
+            <p class="pillar-desc">
+              Comprehensive daily density featuring organic Vitamin D3, K2, and plant-derived minerals for structural harmony and active mobility.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <span class="pillar-num">Pillar 03</span>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                <path d="M8 12C8 12 10 14 12 14C14 14 16 12 16 12"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Gentle Formula for Easy Digestion</h3>
+            <p class="pillar-desc">
+              Fermented plant enzyme blend and gentle probiotics specifically created for smooth daily intake without digestive heavy feelings.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <span class="pillar-num">Pillar 04</span>
+            <div class="pillar-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/>
+              </svg>
+            </div>
+            <h3 class="pillar-title">Daily Wellness Guide for Comfort</h3>
+            <p class="pillar-desc">
+              Concentrated Spanish pomegranate extract and botanical polyphenols promoting serene daily rhythm, hydration, and inner peace.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRODUCT SHOWCASE & FILTERING
+         ========================================================================== -->
+    <section class="products-section section-padding" id="products">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Supplement Showcase</div>
+          <h2 class="section-title">Explore Cellia Daily Lineup</h2>
+          <p class="section-desc">
+            Carefully curated routines designed to support your individual dietary goals and daily vitality.
+          </p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All Products</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="multivitamin">Daily Multivitamin</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="premium">Premium Ingredients</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="vitality">Vitality & Balance</button>
+          </div>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid" id="productsGrid">
+          
+          <!-- Product 1 -->
+          <article class="product-card" data-category="multivitamin">
+            <div class="product-img-box">
+              <span class="product-badge">Daily Core</span>
+              <!-- Bottle Vector -->
+              <svg width="140" height="180" viewBox="0 0 140 180" fill="none">
+                <rect x="35" y="50" width="70" height="100" rx="14" fill="#2C4A3E"/>
+                <rect x="40" y="70" width="60" height="60" rx="4" fill="#FAF8F5"/>
+                <text x="70" y="95" font-family="'Playfair Display'" font-weight="bold" font-size="11" fill="#2C4A3E" text-anchor="middle">CELLIA</text>
+                <text x="70" y="108" font-family="'Inter'" font-size="7" fill="#C88A75" font-weight="bold" text-anchor="middle">MULTIVITAMIN</text>
+                <rect x="42" y="25" width="56" height="25" rx="6" fill="#C88A75"/>
+              </svg>
+            </div>
+            <div class="product-content">
+              <div class="product-tags">
+                <span class="tag-pill">#VitaminD3</span>
+                <span class="tag-pill">#B-Complex</span>
+                <span class="tag-pill">#Zinc</span>
+              </div>
+              <h3 class="product-name">Cellia Daily Essential Multivitamin 50+</h3>
+              <p class="product-desc">
+                Balanced daily vitamins and minerals crafted specifically for women 50+ to support energy metabolism and physical vitality.
+              </p>
+              <div class="product-tip">
+                💡 <strong>Consumption Tip:</strong> Take 2 capsules daily with a glass of water after breakfast.
+              </div>
+              <div class="product-card-footer">
+                <div class="product-specs">
+                  <span class="spec-label">Supply</span>
+                  <span class="spec-value">60 Capsules (30 Days)</span>
+                </div>
+                <button class="btn btn-outline open-modal-btn" data-product="p1" style="padding: 8px 18px; font-size: 0.85rem;">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="premium">
+            <div class="product-img-box">
+              <span class="product-badge">Best Seller</span>
+              <svg width="140" height="180" viewBox="0 0 140 180" fill="none">
+                <rect x="35" y="50" width="70" height="100" rx="14" fill="#8A5343"/>
+                <rect x="40" y="70" width="60" height="60" rx="4" fill="#FAF8F5"/>
+                <text x="70" y="95" font-family="'Playfair Display'" font-weight="bold" font-size="11" fill="#8A5343" text-anchor="middle">CELLIA</text>
+                <text x="70" y="108" font-family="'Inter'" font-size="7" fill="#8A5343" font-weight="bold" text-anchor="middle">POMEGRANATE & CoQ10</text>
+                <rect x="42" y="25" width="56" height="25" rx="6" fill="#2C4A3E"/>
+              </svg>
+            </div>
+            <div class="product-content">
+              <div class="product-tags">
+                <span class="tag-pill">#PomegranateExtract</span>
+                <span class="tag-pill">#CoQ10</span>
+                <span class="tag-pill">#EllagicAcid</span>
+              </div>
+              <h3 class="product-name">Cellia Premium Pomegranate & CoQ10 Complex</h3>
+              <p class="product-desc">
+                Concentrated Spanish pomegranate extract combined with fermented Coenzyme Q10 for botanical antioxidant harmony.
+              </p>
+              <div class="product-tip">
+                💡 <strong>Consumption Tip:</strong> Take 1 capsule daily after lunch for optimal absorption.
+              </div>
+              <div class="product-card-footer">
+                <div class="product-specs">
+                  <span class="spec-label">Supply</span>
+                  <span class="spec-value">30 Softgels (30 Days)</span>
+                </div>
+                <button class="btn btn-outline open-modal-btn" data-product="p2" style="padding: 8px 18px; font-size: 0.85rem;">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="vitality">
+            <div class="product-img-box">
+              <span class="product-badge">Gentle Formula</span>
+              <svg width="140" height="180" viewBox="0 0 140 180" fill="none">
+                <rect x="35" y="50" width="70" height="100" rx="14" fill="#4A7C59"/>
+                <rect x="40" y="70" width="60" height="60" rx="4" fill="#FAF8F5"/>
+                <text x="70" y="95" font-family="'Playfair Display'" font-weight="bold" font-size="11" fill="#4A7C59" text-anchor="middle">CELLIA</text>
+                <text x="70" y="108" font-family="'Inter'" font-size="7" fill="#4A7C59" font-weight="bold" text-anchor="middle">GENTLE ENZYME</text>
+                <rect x="42" y="25" width="56" height="25" rx="6" fill="#C88A75"/>
+              </svg>
+            </div>
+            <div class="product-content">
+              <div class="product-tags">
+                <span class="tag-pill">#PlantEnzymes</span>
+                <span class="tag-pill">#Probiotics</span>
+                <span class="tag-pill">#FermentedGrains</span>
+              </div>
+              <h3 class="product-name">Cellia Gentle Enzyme & Digestive Balance</h3>
+              <p class="product-desc">
+                A naturally fermented 15-grain enzyme formula paired with gentle dietary fiber designed for smooth digestion after meals.
+              </p>
+              <div class="product-tip">
+                💡 <strong>Consumption Tip:</strong> Take 1 stick pack directly or with warm water after dinner.
+              </div>
+              <div class="product-card-footer">
+                <div class="product-specs">
+                  <span class="spec-label">Supply</span>
+                  <span class="spec-value">30 Packets (30 Days)</span>
+                </div>
+                <button class="btn btn-outline open-modal-btn" data-product="p3" style="padding: 8px 18px; font-size: 0.85rem;">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="multivitamin">
+            <div class="product-img-box">
+              <span class="product-badge">Body Harmony</span>
+              <svg width="140" height="180" viewBox="0 0 140 180" fill="none">
+                <rect x="35" y="50" width="70" height="100" rx="14" fill="#C88A75"/>
+                <rect x="40" y="70" width="60" height="60" rx="4" fill="#FAF8F5"/>
+                <text x="70" y="95" font-family="'Playfair Display'" font-weight="bold" font-size="11" fill="#8A5343" text-anchor="middle">CELLIA</text>
+                <text x="70" y="108" font-family="'Inter'" font-size="7" fill="#2C4A3E" font-weight="bold" text-anchor="middle">CALCIUM & D3</text>
+                <rect x="42" y="25" width="56" height="25" rx="6" fill="#2C4A3E"/>
+              </svg>
+            </div>
+            <div class="product-content">
+              <div class="product-tags">
+                <span class="tag-pill">#SeaweedCalcium</span>
+                <span class="tag-pill">#VitaminD3</span>
+                <span class="tag-pill">#VitaminK2</span>
+              </div>
+              <h3 class="product-name">Cellia Calcium, D3 & K2 Bone & Rhythm</h3>
+              <p class="product-desc">
+                Organic plant seaweed calcium combined with Vitamin D3 and K2 to complement structural strength and daily activity.
+              </p>
+              <div class="product-tip">
+                💡 <strong>Consumption Tip:</strong> Take 2 easy-swallow mini capsules daily with meals.
+              </div>
+              <div class="product-card-footer">
+                <div class="product-specs">
+                  <span class="spec-label">Supply</span>
+                  <span class="spec-value">60 Capsules (30 Days)</span>
+                </div>
+                <button class="btn btn-outline open-modal-btn" data-product="p4" style="padding: 8px 18px; font-size: 0.85rem;">View Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE SELF-QUIZ (NUTRITION ROUTINE QUIZ)
+         ========================================================================== -->
+    <section class="quiz-section section-padding" id="quiz">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Interactive Routine Finder</div>
+          <h2 class="section-title">Find Your Personalized Wellness Routine</h2>
+          <p class="section-desc">
+            Answer 4 simple lifestyle questions to discover the supplement combination tailored for your daily balance.
+          </p>
+        </div>
+
+        <div class="quiz-container-box">
+          <!-- Quiz Form View -->
+          <div id="quizFormView">
+            <div class="quiz-progress">
+              <div class="quiz-bar-bg">
+                <div class="quiz-bar-fill" id="quizProgressBar"></div>
+              </div>
+              <span class="quiz-step-count" id="quizStepText">Question 1 of 4</span>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="quiz-step" data-step="1">
+              <h3 class="quiz-question-title">What is your primary daily wellness focus?</h3>
+              <div class="quiz-options-grid">
+                <div class="quiz-option-card" data-val="energy">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Consistent Morning Stamina & Energy</span>
+                </div>
+                <div class="quiz-option-card" data-val="digest">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Light & Comfortable Digestion After Meals</span>
+                </div>
+                <div class="quiz-option-card" data-val="balance">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Comprehensive Nutritional Balance</span>
+                </div>
+                <div class="quiz-option-card" data-val="antiox">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Botanical Antioxidants & Vitality</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-step" data-step="2" style="display: none;">
+              <h3 class="quiz-question-title">How would you describe your daily meal routine?</h3>
+              <div class="quiz-options-grid">
+                <div class="quiz-option-card" data-val="home">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Regular home-cooked meals, but need extra vitamins</span>
+                </div>
+                <div class="quiz-option-card" data-val="light">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Light meals or occasional skipped breakfasts</span>
+                </div>
+                <div class="quiz-option-card" data-val="heavy">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Frequent dining out with heavy feeling post-meals</span>
+                </div>
+                <div class="quiz-option-card" data-val="varied">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Varied meal schedule with busy active routine</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-step" data-step="3" style="display: none;">
+              <h3 class="quiz-question-title">Which raw material profile do you prefer?</h3>
+              <div class="quiz-options-grid">
+                <div class="quiz-option-card" data-val="whole">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Organic plant-based vitamins & minerals</span>
+                </div>
+                <div class="quiz-option-card" data-val="botanical">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Rich pomegranate & botanical fruit extracts</span>
+                </div>
+                <div class="quiz-option-card" data-val="ferment">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Fermented grain enzymes & gentle cultures</span>
+                </div>
+                <div class="quiz-option-card" data-val="all">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">A harmonious synergy of all essential nutrients</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-step" data-step="4" style="display: none;">
+              <h3 class="quiz-question-title">What consumption routine fits best into your day?</h3>
+              <div class="quiz-options-grid">
+                <div class="quiz-option-card" data-val="morning">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Morning tea routine with daily capsules</span>
+                </div>
+                <div class="quiz-option-card" data-val="afternoon">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Post-lunch vitality boost softgel</span>
+                </div>
+                <div class="quiz-option-card" data-val="evening">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Post-dinner digestive comfort packet</span>
+                </div>
+                <div class="quiz-option-card" data-val="flexible">
+                  <div class="quiz-radio"></div>
+                  <span class="quiz-option-text">Flexible once-a-day complete routine</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-nav-btns">
+              <button class="btn btn-outline" id="quizPrevBtn" style="visibility: hidden;">Back</button>
+              <button class="btn btn-primary" id="quizNextBtn">Next Question</button>
+            </div>
+          </div>
+
+          <!-- Quiz Result View -->
+          <div class="quiz-result-box" id="quizResultView">
+            <div class="result-icon-badge">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 class="result-title">Your Tailored Cellia Routine</h3>
+            <p style="color: var(--color-text-muted);" id="resultSummaryText">
+              Based on your lifestyle responses, here is your recommended daily 2-part routine.
+            </p>
+
+            <div class="result-routine-card" id="resultCardContent">
+              <!-- Dynamically populated via JS -->
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+              <a href="#products" class="btn btn-secondary">Explore Recommended Products</a>
+              <button class="btn btn-outline" id="quizResetBtn">Retake Routine Quiz</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         KEY INGREDIENTS SPOTLIGHT
+         ========================================================================== -->
+    <section class="ingredients-section section-padding" id="ingredients">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Nutrition Guide</div>
+          <h2 class="section-title">Sourced with Uncompromising Quality</h2>
+          <p class="section-desc">
+            We partner with leading global ingredient developers to ensure strict purity, high bio-compatibility, and traceable quality.
+          </p>
+        </div>
+
+        <div class="ingredients-grid">
+          <!-- Ingredient 1 -->
+          <div class="ingredient-card">
+            <div class="ingredient-img-circle">
+              <span style="font-size: 2.2rem; color: var(--color-rose-gold);">🔴</span>
+            </div>
+            <span class="ingredient-origin">Spain • Pure Extract</span>
+            <h3 class="ingredient-name">Spanish Pomegranate</h3>
+            <p class="ingredient-desc">
+              Sun-ripened Mediterranean pomegranates rich in natural ellagic acid, polyphenols, and botanical antioxidants.
+            </p>
+          </div>
+
+          <!-- Ingredient 2 -->
+          <div class="ingredient-card">
+            <div class="ingredient-img-circle">
+              <span style="font-size: 2.2rem; color: var(--color-sage);">☀️</span>
+            </div>
+            <span class="ingredient-origin">Switzerland • Organic</span>
+            <h3 class="ingredient-name">Vitamin D3 & K2 Duo</h3>
+            <p class="ingredient-desc">
+              Bio-compatible Vitamin D3 paired with K2 to harmoniously assist daily calcium absorption and active body balance.
+            </p>
+          </div>
+
+          <!-- Ingredient 3 -->
+          <div class="ingredient-card">
+            <div class="ingredient-img-circle">
+              <span style="font-size: 2.2rem; color: var(--color-gold);">✨</span>
+            </div>
+            <span class="ingredient-origin">Fermented Origin</span>
+            <h3 class="ingredient-name">High-Purity CoQ10</h3>
+            <p class="ingredient-desc">
+              Naturally fermented Coenzyme Q10 supporting daily cellular stamina and vibrant morning vitality.
+            </p>
+          </div>
+
+          <!-- Ingredient 4 -->
+          <div class="ingredient-card">
+            <div class="ingredient-img-circle">
+              <span style="font-size: 2.2rem; color: var(--color-sage-dark);">🌾</span>
+            </div>
+            <span class="ingredient-origin">100% Plant-Based</span>
+            <h3 class="ingredient-name">Fermented Grain Enzymes</h3>
+            <p class="ingredient-desc">
+              A 15-grain botanical fermentation complex designed for soft, gentle digestion without digestive weight.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CUSTOMER REVIEWS
+         ========================================================================== -->
+    <section class="reviews-section section-padding" id="reviews">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Verified Experiences</div>
+          <h2 class="section-title">Loved by Women in Their 50s</h2>
+          <p class="section-desc">
+            Real daily routines shared by our community of women building vibrant wellness habits.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-quote">
+                "Finding a multivitamin that doesn't upset my stomach in the morning was always a challenge until I tried Cellia. It feels so gentle and my mornings feel much more steady."
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">EH</div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">Eun-Hee M. (Age 54)</span>
+                <span class="reviewer-tag">Verified Buyer • Daily Multivitamin</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-quote">
+                "The Pomegranate & CoQ10 softgels have become my favorite afternoon ritual. The raw ingredients feel so premium and refined. Highly recommended!"
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">SK</div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">Sarah K. (Age 52)</span>
+                <span class="reviewer-tag">Verified Buyer • Pomegranate Complex</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-quote">
+                "I take the Gentle Enzymes every evening after dinner. It helps me feel light and comfortable throughout the night. The routine quiz recommended it perfectly!"
+              </p>
+            </div>
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">GP</div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">Grace P. (Age 57)</span>
+                <span class="reviewer-tag">Verified Buyer • Gentle Enzymes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ ACCORDION SECTION
+         ========================================================================== -->
+    <section class="faq-section section-padding" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <div class="section-tag">Frequently Asked Questions</div>
+          <h2 class="section-title">Everything You Need to Know</h2>
+          <p class="section-desc">
+            Clear guidelines on consumption, ingredient safety, and daily routines.
+          </p>
+        </div>
+
+        <div class="faq-container" id="faqAccordion">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Is it best to take Cellia supplements before or after meals?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                For optimal absorption and stomach comfort, we recommend taking Cellia Daily Essential Multivitamin and Pomegranate & CoQ10 Complex after a meal (such as after breakfast or lunch) with a glass of lukewarm water. The Gentle Enzyme packets are best taken immediately following your evening meal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>What is the recommended daily intake for Cellia products?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Each product is formulated with precise daily dietary values. For the Daily Multivitamin and Calcium D3, the recommended serving is 2 capsules per day. For Pomegranate & CoQ10 Complex and Gentle Enzymes, 1 serving daily is ideal unless otherwise suggested by your dietary preferences.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Are Cellia capsules easy to digest for sensitive stomachs?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Yes! All Cellia products feature 100% plant-derived vegetable capsules (HPMC) that dissolve smoothly in the digestive tract without synthetic chemical coating, synthetic colorants, or heavy artificial fillers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Can I combine multiple Cellia products into one daily routine?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                Absolutely. Cellia products are designed to complement one another seamlessly. For example, combining the Daily Multivitamin in the morning with Pomegranate & CoQ10 at lunch and Gentle Enzymes in the evening forms a balanced full-day wellness routine.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>What quality standards do your raw ingredients adhere to?</span>
+              <span class="faq-icon">↓</span>
+            </button>
+            <div class="faq-content">
+              <p class="faq-text">
+                We strictly select raw materials certified under ISO and GMP global quality benchmarks. Every raw material batch undergoes independent laboratory testing to verify heavy metal safety, pesticide-free verification, and potency standard compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PRODUCT DETAIL MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div id="modalBodyContent">
+        <!-- Dynamically injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER & REGULATORY COMPLIANCE DISCLAIMER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Cellia Vital50+</h3>
+          <p class="footer-brand-desc">
+            Empowering women in their 50s with daily vitality, clean botanical ingredients, and elegant wellness solutions.
+          </p>
+          <div style="font-size: 0.85rem; color: #8DA998;">
+            📍 Cellia Life Sciences Co., Ltd.<br>
+            Customer Care: 1800-CELLIA (Mon-Fri 09:00 - 18:00)
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#story">About Us</a></li>
+            <li><a href="#pillars">Nutrition Guide</a></li>
+            <li><a href="#products">Supplement Lineup</a></li>
+            <li><a href="#ingredients">Raw Ingredients</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#quiz">Routine Quiz</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#faq">FAQ & Guidance</a></li>
+            <li><a href="#">Quality Standards</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Daily Wellness Newsletter</h4>
+          <p style="font-size: 0.85rem; color: #B5C9BC; margin-bottom: 14px;">
+            Subscribe to receive lifestyle care guides and ingredient highlights.
+          </p>
+          <form style="display: flex; gap: 8px;" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Cellia Wellness Updates.');">
+            <input type="email" placeholder="Enter your email" required style="padding: 10px 14px; border-radius: var(--radius-sm); border: none; font-size: 0.85rem; flex-grow: 1;">
+            <button type="submit" class="btn btn-primary" style="padding: 10px 16px; font-size: 0.85rem; flex-shrink: 0;">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Legal Compliance Disclaimer Box -->
+      <div class="footer-disclaimer-box">
+        <div class="disclaimer-title">Regulatory Compliance Notice & Disclaimer</div>
+        <p class="disclaimer-text">
+          Disclaimer: Products sold on this website are dietary supplements formulated for general daily wellness support and nutritional balance. These statements have not been evaluated by regulatory food authorities. Products are not intended to diagnose, treat, cure, or prevent any disease or medical condition. Please consult with a qualified healthcare professional before starting any dietary routine, especially if you are taking prescription medications or have existing health considerations.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Cellia Vital50+ Life Sciences. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: inherit;">Privacy Policy</a>
+          <a href="#" style="color: inherit;">Terms of Service</a>
+          <a href="#" style="color: inherit;">Dietary Compliance Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ----------------------------------------------------------------------
+         1. Sticky Header & Mobile Nav Toggle
+         ---------------------------------------------------------------------- */
+      const header = document.getElementById('header');
+      const mobileToggle = document.getElementById('mobileToggle');
+      const navMenu = document.getElementById('navMenu');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      // Close mobile menu on link click
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+
+      /* ----------------------------------------------------------------------
+         2. Product Lineup Category Filtering
+         ---------------------------------------------------------------------- */
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const filter = btn.getAttribute('data-filter');
+
+          productCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+              setTimeout(() => card.style.opacity = '1', 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      /* ----------------------------------------------------------------------
+         3. Product Details Modal Data & LifeCycle
+         ---------------------------------------------------------------------- */
+      const productData = {
+        p1: {
+          tag: 'Daily Core Nutrition',
+          name: 'Cellia Daily Essential Multivitamin 50+',
+          desc: 'Formulated with high-bioavailability vitamins and mineral complexes tailored to support energy metabolism, stamina, and overall vitality in women 50+.',
+          ingredients: [
+            'Swiss Organic Vitamin D3 (2000 IU)',
+            'Vitamin B-Complex (B1, B2, B6, B12)',
+            'Zinc Citrate & Plant Mineral Complex',
+            '100% Plant Vegetable Capsules'
+          ],
+          intake: 'Take 2 capsules daily with a glass of water after your morning meal.'
+        },
+        p2: {
+          tag: 'Premium Botanical Antioxidants',
+          name: 'Cellia Premium Pomegranate & CoQ10 Complex',
+          desc: 'Features sun-ripened Spanish pomegranate extract rich in ellagic acid combined with fermented CoQ10 to promote cellular stamina and botanical harmony.',
+          ingredients: [
+            'Spanish Organic Pomegranate Extract (40% Ellagic Acid)',
+            'Fermented Coenzyme Q10 (100mg)',
+            'Natural Vitamin E from Sunflower Oil',
+            'Botanical Softgel Shell'
+          ],
+          intake: 'Take 1 softgel daily after lunch.'
+        },
+        p3: {
+          tag: 'Gentle Digestion & Enzymes',
+          name: 'Cellia Gentle Enzyme & Digestive Balance',
+          desc: 'A 15-grain fermented digestive enzyme formula paired with gentle dietary fiber designed for smooth digestion and post-meal comfort.',
+          ingredients: [
+            '15-Grain Fermented Plant Enzyme Blend (Amylase, Protease, Lipase)',
+            'Organic Acacia Dietary Fiber',
+            'Gentle Plant Lactobacilli Cultures',
+            'Natural Apple & Cinnamon Flavor'
+          ],
+          intake: 'Take 1 packet directly or mixed with lukewarm water after evening meal.'
+        },
+        p4: {
+          tag: 'Body Harmony & Structural Balance',
+          name: 'Cellia Calcium, D3 & K2 Bone & Rhythm',
+          desc: 'Sourced from organic Icelandic red seaweed, providing natural plant calcium paired with D3 and K2 for structural harmony and active mobility.',
+          ingredients: [
+            'Aquamin™ Organic Seaweed Plant Calcium',
+            'Vitamin D3 & Vitamin K2 (MK-7)',
+            'Plant Magnesium Citrate',
+            'Easy-Swallow Small Capsule'
+          ],
+          intake: 'Take 2 capsules daily after breakfast or lunch.'
+        }
+      };
+
+      const modal = document.getElementById('productModal');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const modalBody = document.getElementById('modalBodyContent');
+
+      document.querySelectorAll('.open-modal-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const pId = btn.getAttribute('data-product');
+          const data = productData[pId];
+
+          if (data) {
+            modalBody.innerHTML = `
+              <div class="modal-header-tag">${data.tag}</div>
+              <h3 class="modal-title" id="modalTitle">${data.name}</h3>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 20px;">${data.desc}</p>
+              
+              <div class="modal-section-title">Key Raw Ingredients</div>
+              <ul class="modal-list">
+                ${data.ingredients.map(ing => `<li>${ing}</li>`).join('')}
+              </ul>
+
+              <div class="modal-section-title">Recommended Intake</div>
+              <p style="font-size: 0.95rem; background: var(--color-sage-soft); padding: 14px 18px; border-radius: var(--radius-sm); color: var(--color-sage-dark); font-weight: 600;">
+                ${data.intake}
+              </p>
+
+              <div style="margin-top: 30px; display: flex; justify-content: flex-end;">
+                <button class="btn btn-primary" onclick="document.getElementById('productModal').classList.remove('open')">Close Details</button>
+              </div>
+            `;
+            modal.classList.add('open');
+          }
+        });
+      });
+
+      modalCloseBtn.addEventListener('click', () => modal.classList.remove('open'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('open');
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') modal.classList.remove('open');
+      });
+
+      /* ----------------------------------------------------------------------
+         4. Interactive Self-Quiz Logic
+         ---------------------------------------------------------------------- */
+      const quizSteps = document.querySelectorAll('.quiz-step');
+      const progressBar = document.getElementById('quizProgressBar');
+      const stepText = document.getElementById('quizStepText');
+      const prevBtn = document.getElementById('quizPrevBtn');
+      const nextBtn = document.getElementById('quizNextBtn');
+      const formView = document.getElementById('quizFormView');
+      const resultView = document.getElementById('quizResultView');
+      const resultCardContent = document.getElementById('resultCardContent');
+      const resetBtn = document.getElementById('quizResetBtn');
+
+      let currentStep = 1;
+      const userAnswers = {};
+
+      // Selection handling
+      document.querySelectorAll('.quiz-option-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const parentStep = card.closest('.quiz-step');
+          const stepNum = parentStep.getAttribute('data-step');
+          
+          parentStep.querySelectorAll('.quiz-option-card').forEach(c => c.classList.remove('selected'));
+          card.classList.add('selected');
+          userAnswers[stepNum] = card.getAttribute('data-val');
+        });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (!userAnswers[currentStep]) {
+          alert('Please select an option to continue.');
+          return;
+        }
+
+        if (currentStep < 4) {
+          currentStep++;
+          updateQuizUI();
+        } else {
+          // Calculate Result
+          showQuizResult();
+        }
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (currentStep > 1) {
+          currentStep--;
+          updateQuizUI();
+        }
+      });
+
+      function updateQuizUI() {
+        quizSteps.forEach(step => {
+          step.style.display = step.getAttribute('data-step') == currentStep ? 'block' : 'none';
+        });
+
+        progressBar.style.width = `${(currentStep / 4) * 100}%`;
+        stepText.textContent = `Question ${currentStep} of 4`;
+
+        prevBtn.style.visibility = currentStep === 1 ? 'hidden' : 'visible';
+        nextBtn.textContent = currentStep === 4 ? 'See My Recommended Routine' : 'Next Question';
+      }
+
+      function showQuizResult() {
+        formView.style.display = 'none';
+        resultView.style.display = 'block';
+
+        const focus = userAnswers['1'] || 'energy';
+        
+        let rTitle = 'Vitality & Daily Balance Routine';
+        let prodA = 'Cellia Daily Essential Multivitamin 50+';
+        let prodB = 'Cellia Premium Pomegranate & CoQ10 Complex';
+        let reason = 'Formulated to maintain morning stamina, daily vitality, and botanical antioxidant balance.';
+
+        if (focus === 'digest') {
+          rTitle = 'Gentle Digestive Comfort Routine';
+          prodA = 'Cellia Gentle Enzyme & Digestive Balance';
+          prodB = 'Cellia Daily Essential Multivitamin 50+';
+          reason = 'Selected to support comfortable post-meal digestion paired with smooth daily multivitamin intake.';
+        } else if (focus === 'balance') {
+          rTitle = 'Structural Harmony & Density Routine';
+          prodA = 'Cellia Calcium, D3 & K2 Bone & Rhythm';
+          prodB = 'Cellia Daily Essential Multivitamin 50+';
+          reason = 'Designed for comprehensive plant mineral support, structural strength, and essential daily vitamins.';
+        }
+
+        resultCardContent.innerHTML = `
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-rose-gold); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px;">RECOMMENDED DUO</div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-sage-dark); margin-bottom: 12px;">${rTitle}</h4>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-bottom: 20px;">${reason}</p>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; background: #FFFFFF; padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--color-border);">
+            <div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-sage); font-weight: 700;">Step 1 (Morning)</span>
+              <div style="font-weight: 700; color: var(--color-sage-dark); margin-top: 4px;">${prodA}</div>
+            </div>
+            <div>
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--color-rose-gold); font-weight: 700;">Step 2 (Afternoon/Evening)</span>
+              <div style="font-weight: 700; color: var(--color-sage-dark); margin-top: 4px;">${prodB}</div>
+            </div>
+          </div>
+        `;
+      }
+
+      resetBtn.addEventListener('click', () => {
+        currentStep = 1;
+        Object.keys(userAnswers).forEach(k => delete userAnswers[k]);
+        document.querySelectorAll('.quiz-option-card').forEach(c => c.classList.remove('selected'));
+        resultView.style.display = 'none';
+        formView.style.display = 'block';
+        updateQuizUI();
+      });
+
+      /* ----------------------------------------------------------------------
+         5. FAQ Accordion Toggle
+         ---------------------------------------------------------------------- */
+      const faqItems = document.querySelectorAll('.faq-item');
+
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-button');
+        const content = item.querySelector('.faq-content');
+
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('open');
+
+          // Close all
+          faqItems.forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-button').setAttribute('aria-expanded', 'false');
+            i.querySelector('.faq-content').style.maxHeight = '0';
+          });
+
+          // Open clicked if was closed
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
